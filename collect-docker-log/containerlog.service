@@ -1,0 +1,9 @@
+[Unit]
+Description=Collect Docker Container Logs
+After=network-online.target
+
+[Service]
+ExecStart=/usr/bin/sh --dir--/collect-logs.sh
+
+[Install]
+WantedBy=multi-user.target
